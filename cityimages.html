@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Images</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-container img {
+            width: calc(33.33% - 10px); /* Three images, minus a little for margin */
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            .image-container img {
+                width: calc(50% - 10px); /* Two images in a row, minus a little for margin */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="/images/london_bridge.jpg" alt="London Bridge">
+        <img src="/images/london_eye.jpeg" alt="London Eye">
+        <img src="/images/London_bigben.jpeg" alt="Big Ben">
+    </div>
+</body>
+</html>
